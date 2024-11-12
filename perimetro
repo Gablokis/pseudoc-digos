@@ -1,0 +1,12 @@
+package Ex1;
+
+import java.util.Scanner;
+
+public class Perimetro {
+	public static void main(String[] args) {
+		double PI = 3.14, raio = 0, perimetro = 0;
+		System.out.println("Informe o valor do raio");
+		Scanner leia = new Scanner(System.in);
+		raio = leia.nextDouble();
+		perimetro = 2*PI*raio;
+		System.out.println(perimetro);
