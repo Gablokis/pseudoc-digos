@@ -1,0 +1,99 @@
+package exc3;
+
+import java.util.Scanner;
+
+public class Moperaçao {
+	public static void main(String[] args) {
+		double  n1, n2, resultado;
+		Scanner leia = new Scanner (System.in);
+		System.out.println("Informe o 1º numero");
+		n1 = leia.nextDouble();
+		System.out.println("Informe o 2º numero");
+		n2 = leia.nextDouble();
+		System.out.println("Escolha uma das opções:"
+		+ "\n1- Média"
+		+ "\n2- Diferença"
+		+ "\n3- Produto"
+		+ "\n4- Divisão");
+		int op;
+		op = leia.nextInt();
+		switch (op) {
+		case 1: {
+			resultado = (n1+n2)/2;
+			System.out.println("A média é:" + resultado);
+			break;
+		}
+		case 2: {
+			resultado = n1-n2;
+			System.out.println("A diferença é:" + resultado);
+			break;
+		}
+		case 3: {
+			resultado = n1*n2;
+			System.out.println("O produto é:" + resultado);
+			break;
+		 }
+		case 4: {
+			if(n2 > 0) {
+				resultado = n1/n2;
+				System.out.println("A divisão é:" + resultado);
+				break;
+			} else {
+				System.out.println("O segundo número deve ser maior que zero");
+				}
+			}
+
+		default:
+			System.out.println("Opção inválida!");
+		}
+	}
+}package exc3;
+
+import java.util.Scanner;
+
+public class Moperaçao {
+	public static void main(String[] args) {
+		double  n1, n2, resultado;
+		Scanner leia = new Scanner (System.in);
+		System.out.println("Informe o 1º numero");
+		n1 = leia.nextDouble();
+		System.out.println("Informe o 2º numero");
+		n2 = leia.nextDouble();
+		System.out.println("Escolha uma das opções:"
+		+ "\n1- Média"
+		+ "\n2- Diferença"
+		+ "\n3- Produto"
+		+ "\n4- Divisão");
+		int op;
+		op = leia.nextInt();
+		switch (op) {
+		case 1: {
+			resultado = (n1+n2)/2;
+			System.out.println("A média é:" + resultado);
+			break;
+		}
+		case 2: {
+			resultado = n1-n2;
+			System.out.println("A diferença é:" + resultado);
+			break;
+		}
+		case 3: {
+			resultado = n1*n2;
+			System.out.println("O produto é:" + resultado);
+			break;
+		 }
+		case 4: {
+			if(n2 > 0) {
+				resultado = n1/n2;
+				System.out.println("A divisão é:" + resultado);
+				break;
+			} else {
+				System.out.println("O segundo número deve ser maior que zero");
+				}
+			}
+
+		default:
+			System.out.println("Opção inválida!");
+		}
+	}
+}
