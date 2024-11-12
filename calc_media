@@ -1,0 +1,23 @@
+package exc3;
+import java.util.Scanner;
+public class media {
+
+	public static void main(String[] args) {
+		double n1, n2, n3, n4, media;
+		Scanner leia = new Scanner (System.in);
+		System.out.println("Informe a 1ª nota");
+		n1 = leia.nextDouble();
+		System.out.println("Informe a 2ª nota");
+		n2 = leia.nextDouble();
+		System.out.println("Informe a 3ª nota");
+		n3 = leia.nextDouble();
+		System.out.println("Informe a 4ª nota");
+		n4 = leia.nextDouble();
+		media = (n1+n2+n3+n4)/4;
+		if (media >=7) {
+			System.out.println("Aprovado!");
+			
+		}else {System.out.println("Reprovado!");}
+	}
+
+}
