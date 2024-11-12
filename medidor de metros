@@ -1,0 +1,14 @@
+package Ex1;
+import java.util.Scanner;
+public class conversao {
+
+	public static void main(String[] args) {
+		double metros = 0;
+		System.out.println("Informe a quantidade de metros");
+		Scanner leia = new Scanner(System.in);
+		metros = leia.nextDouble();
+		System.out.println(metros * 100);
+
+	}
+
+}
